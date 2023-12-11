@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+   <title>UPDATE TODO</title>
+</head>
+<body>
+    <header class="head">
+        <div class="content-header">
+            <h2><a href="/" class="active">My Todo</a></h2>
+            <ul>
+                <li><a href="/" class="active">Home</a></li>
+                <li><a href="/">About</a></li>
+            </ul>
+
+            <div class="search-bar">
+                <input
+                spellcheck="false"
+                type="text"
+                placeholder="Search a to-do"
+                name="search"
+                id="search"
+                class="search"
+                />
+
+                <button class="search-btn" id="search-btn">Search</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="contant section-1">
+            <h2>Add your Todo</h2>
+            <hr />
+            <form method="POST" action="/update/{{todo._id}}" class="form" name="form">
+                <div class="input-div">
+                    <label for="title">Enter your Todo Title</label>
+                    <input
+                        type="text"
+                        name="title"
+                        id="title"
+                        value="{{todo.title}}"
+                        class="input-text"
+                        placeholder="Enter a title"
+                    />
+                </div>
+
+                <div class="input-div">
+                    <label for="description">Describe your todo here</label>
+                    <input 
+                        type="text"
+                        name="description"
+                        class="input-text"
+                        id="description"
+                        value="{{todo.description}}"
+                        placeholder="Enter a description"
+                    />
+                </div>
+                <button class="add-btn" type="submit">Add</button>
+            </form>
+        </div>
+
+        
+</body>
+</html>
+
+
+
+
+
+
+

@@ -1,0 +1,134 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.head {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-header h2 {
+    font-size: 1.5rem;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+ul li {
+    margin-right: 1rem;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 0.5rem;
+}
+
+.search-btn {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.section-1,
+.section-2 {
+    margin-bottom: 2rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+}
+
+.input-div {
+    margin-bottom: 1rem;
+}
+
+.input-text {
+    padding: 0.5rem;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.add-btn {
+    padding: 0.5rem 1rem;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.table-div table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-div th,
+.table-div td {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.description-row {
+    width: 40%;
+}
+
+.button-row a {
+    display: inline-block;
+    margin-right: 0.5rem;
+    text-decoration: none;
+    padding: 0.3rem 0.5rem;
+    border-radius: 3px;
+}
+
+.edit {
+    background-color: #ffc107;
+    color: #333;
+}
+
+.delete {
+    background-color: #dc3545;
+    color: #fff;
+}
